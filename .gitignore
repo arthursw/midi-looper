@@ -1,0 +1,4 @@
+dist/midi-js-soundfonts/
+node_modules/
+.cache/
+.DS_Store

@@ -1,0 +1,21 @@
+{
+  "name": "midilooper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "tone": "13.8.25",
+    "svg.js": "2.7.1",
+    "tonal": "2.2.2",
+    "webmidi": "2.5.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1",
+    "typescript": "^3.8.3"
+  },
+  "keywords": []
+}

@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+#sequencer {
+  width: 100%;
+  /* height: 300px; */
+  overflow: auto;
+}
+
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */
