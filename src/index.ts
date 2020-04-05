@@ -326,6 +326,11 @@ Transport.loopEnd = Time('0:0:' + trackLength);
 
 Transport.scheduleRepeat(movePlayHead, "16n");
 
+let addTrackButton = document.getElementById("add-track") as HTMLButtonElement;
+addTrackButton.addEventListener("click", (event: MouseEvent) => {
+  console.log('add track')
+});
+
 let playButton = document.getElementById("play") as HTMLButtonElement;
 playButton.addEventListener("click", (event: MouseEvent) => {
   if(Transport.state === "started") {

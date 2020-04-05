@@ -3939,6 +3939,10 @@ tone_1.Transport.loop = true;
 tone_1.Transport.loopStart = tone_1.Time(0);
 tone_1.Transport.loopEnd = tone_1.Time('0:0:' + trackLength);
 tone_1.Transport.scheduleRepeat(movePlayHead, "16n");
+var addTrackButton = document.getElementById("add-track");
+addTrackButton.addEventListener("click", function (event) {
+  console.log('add track');
+});
 var playButton = document.getElementById("play");
 playButton.addEventListener("click", function (event) {
   if (tone_1.Transport.state === "started") {
@@ -3990,7 +3994,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50314" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51303" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
